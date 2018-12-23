@@ -1,0 +1,15 @@
+
+1) There wasn't any specific logic used. As per the code. I tried to use few ES6 concepts:
+	
+	a) Block scope
+	b) Arrow
+	c) For-of
+	d) Template-literals
+
+2) The ES6 concepts used for bubble sort are:
+
+	a) Block scope
+	b) REST parameters
+	c) Arrow
+	d) For-of
+	e) const

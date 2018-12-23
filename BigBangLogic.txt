@@ -1,0 +1,64 @@
+LOGIC:
+Whole dataset is assigned to the term = "bigBang"
+
+1) Displaying Information of the Episode by taking the Season number and Episode Number as the argument:
+
+	a) Created a function naming "episodeInformation" and provided parameters "seasonNo" and "episodeNo" along with  
+	   dataset name.
+
+	b) Created variables "seasonFound" and "episodeFound" and assigned them to false. If the variables are true,
+	   then the data related to that episode will be displayed. As of now, its empty.
+
+	c) Created variables "seasonNo" and "episodeNo" so that whatever the season and episode name is given, it will
+	   consider as an argument, which will be taken from window.prompt.
+
+	d) Providing a "for-of" condition where it iterates the data related to season number and episode in the bigBang
+	   data.
+
+	e) Provided two If conditions, i.e. one for iterating the season number from the dataset and other If condition 
+	   to iterate the episode number. If the condition is True, then the data related to the particular episode is
+	   provided through a function namely, json.stringify which converts the whole block of data from dataset into
+	   a string and displays the information of particular episode.
+
+	f) Provided another if condition to provide a message when the given season and episode is not found in 
+	   dataset.	
+
+-------------------------------------------------------------------------------------------------------------------------------
+2) Displaying Information of any number of episodes just by providing the episode numbers as input:
+
+	a) Created a function naming "epDetailsById" and provided REST parameter "epID".
+
+	b) Created variable "idFound" and assigned them to false. If the variable is true,then the data related to that
+	   episode will be displayed. As of now, its empty.
+
+	c) The episodes numbers are provided as input through the function "epDetailsById".
+
+	d) Providing a "for-of" condition where it iterates the IDS which are provided as arguments .
+	
+	e) Providing a "for-of" condition where it iterates the content/data related to that particular arguments from
+	   dataset.
+
+	f) Provided an IF condition to check if the provided argument is present in the dataset. If its true, then the data
+	   related to that particular episode is displayed.
+
+	g) Provided another if condition to provide a message when the given ID is not found in dataset.
+
+--------------------------------------------------------------------------------------------------------------------------------
+3) Search Episode by its name:
+
+	a) Created a function naming "episdoeData" and provided parameters "name" and "bigBang".
+
+	b) Created a variable "episodeName" and assigned to false. If the "episodeName" is true, then the data related to 
+	   that particular episode name is displayed. As of now, its empty.
+
+	c) Created a variable "name" so that whatever the episode Name is given, it will consider as an argument which
+	   will be taken from window.prompt.
+
+	d) Providing a "for-of" condition where it iterates the data related to episodes in the bigBang dataset, in 
+	   variable "x".
+
+	e) Provided an IF condition to check if the given name is actually present in the dataset through variable x. If
+           true, then the data related to that partiular episode is displayed. Here we have provided toLowerCase() 
+	   so that the input can be taken irrespective of case sensitivity factor.
+
+	f) Provided another if condition to provide a message if that particular named episode is not available.
